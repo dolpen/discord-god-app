@@ -89,7 +89,7 @@ class ReportCommand implements Command {
       DEFAULT_PASSED_DATE
     const channels = await interaction.guild.channels.fetch()
     const textChannels = Array.from(
-      channels.filter((c) => c.type === ChannelType.GuildText).values()
+      channels.filter((c) => c?.type === ChannelType.GuildText).values()
     ) as GuildTextBasedChannel[]
     const now = new Date().getTime()
     const border = now - passed * 86400 * 1000

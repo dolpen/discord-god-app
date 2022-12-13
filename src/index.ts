@@ -18,7 +18,7 @@ const clientOpts = {
   ],
 }
 const token = process.env.DISCORD_TOKEN
-const appId: Snowflake = '1014407001821958164'
+const appId: Snowflake = '566470134898622473'
 const commands = [Kick.getCommand(), Report.getCommand()]
 if (!token) {
   log.debug(ms.getMessage('CORE_ERROR_MISSING_TOKEN'))
